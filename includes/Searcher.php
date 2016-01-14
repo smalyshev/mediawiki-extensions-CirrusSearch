@@ -913,8 +913,6 @@ GROOVY;
 				try {
 					$searcher->start( "lookup namespace for {namespaceName}", array(
 						'namespaceName' => $name,
-						'query' => $name,
-						'queryType' => 'namespace',
 					) );
 					$pageType = $conn->getNamespaceType( $indexBaseName );
 					$match = new \Elastica\Query\Match();
